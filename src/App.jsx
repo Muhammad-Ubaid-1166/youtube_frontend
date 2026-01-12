@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // FIXED: Using localhost instead of 127.0.0.1 to match the CORS configuration
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://youtubechatbotbackend.vercel.app";
 
 const languages = ["Mandarin Chinese", "Spanish", "English", "Hindi", "Bengali"];
 
