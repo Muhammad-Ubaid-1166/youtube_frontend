@@ -3,7 +3,18 @@ import React, { useState, useEffect } from 'react';
 // FIXED: Using localhost instead of 127.0.0.1 to match the CORS configuration
 const API_URL = "http://localhost:8000";
 
-const languages = ["Mandarin Chinese", "Spanish", "English", "Hindi", "Bengali"];
+const languages = [
+  "Mandarin Chinese", "Spanish", "English", "Hindi", "Bengali", // Original
+  // Added Asian Languages
+  "Japanese", "Korean", "Vietnamese", "Thai", "Malay", "Indonesian", // Southeast Asia
+  "Tagalog (Filipino)", "Burmese", "Khmer (Cambodian)", "Lao", // SE Asia
+  "Tamil", "Telugu", "Punjabi", "Marathi", "Gujarati", "Kannada", "Malayalam", // South Asia (India)
+  "Urdu", "Nepali", "Sinhala", "Assamese", // South Asia
+  "Farsi (Persian)", "Arabic", "Turkish", "Hebrew", // West Asia
+  "Cantonese", "Hakka", // Chinese dialects/languages
+  "Kazakh", "Mongolian" // Central/North Asia
+];
+
 
 // --- Keys for localStorage ---
 const METADATA_INSTRUCTION_KEY = 'metadataAgentInstruction';
